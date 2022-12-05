@@ -110,6 +110,7 @@ p {
     text-decoration: none;
     position: relative;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
@@ -135,7 +136,6 @@ p {
     background: #2196F3;
     border-radius: 2px;
     opacity: 1;
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -219,7 +219,7 @@ p {
 }
 
 .main-hiro {
-    padding: 200px; 
+    padding: 200px 0; 
 }
 .hero {
         
@@ -252,14 +252,14 @@ p {
         border: 1px solid transparent;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
 }
 
-
 .button-primary:focus,
 .button-primary:hover {
-    color: var(--hero-color);
-    background: var(--secretion-color);
+        color: var(--hero-color);
+        background: var(--secretion-color);
 }
 /* model window */
 
@@ -271,9 +271,8 @@ p {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
-
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -282,6 +281,7 @@ p {
 
 .backdrop.is-hidden .modal {
 transform: translate(-50%, -50%) scale(0.9);
+
 
 }
 
@@ -295,6 +295,7 @@ transform: translate(-50%, -50%) scale(0.9);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
     
     transform: translate(-50%, -50%) scale(1);
 
@@ -382,6 +383,7 @@ transform: translate(-50%, -50%) scale(0.9);
 .img-item {
     margin-right: 30px;
     position: relative;
+    transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-item:last-child {
@@ -400,7 +402,7 @@ transform: translate(-50%, -50%) scale(0.9);
     bottom: 0;
     padding: 27px;
     background: rgba(47, 48, 58, 0.8);
-
+    
 }
 
 .sub a {
@@ -497,7 +499,8 @@ transform: translate(-50%, -50%) scale(0.9);
     height: 100%;
     justify-content: center;
     align-items: center;
-    fill: #AFB1B8;     
+    fill: #AFB1B8; 
+    transition: fill background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-links {
@@ -513,7 +516,7 @@ transform: translate(-50%, -50%) scale(0.9);
     width: 44px;
     height: 44px;
     fill: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
 }
 
 
@@ -532,13 +535,21 @@ transform: translate(-50%, -50%) scale(0.9);
     display: flex; 
     margin-bottom: 0px; 
     
+    
 }
 .all-brands {
     margin-right: 30px;
+    
 }
 
 .all-brands:last-child {
     margin-right: 0px;
+}
+
+.brands-link {
+    color: #AFB1B8;
+    transition: fill border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
 }
 
 .brands {
@@ -546,19 +557,25 @@ transform: translate(-50%, -50%) scale(0.9);
     display: flex;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;  
-    background-repeat: no-repeat;
-    background-position: center;
-    fill: #AFB1B8;
+    border-radius: 4px;
+
+    color: currentColor;
     
+    background-repeat: no-repeat;
+    background-position: center; 
+    border: 1px solid #AFB1B8;
+    transition: fill border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.drand-link:focus,
+.drand-link:hover,
+.brands:focus,
 .brands:hover {
- fill:#2196F3;
- border: 1px solid #2196F3;
+    fill: #2196F3;
+    border: 1px solid #2196F3;
 }
+
+
 
 /* section portfolio */
 
@@ -584,7 +601,7 @@ transform: translate(-50%, -50%) scale(0.9);
     border-radius: 4px;
     padding: 6px 22px;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color background-color box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button {
@@ -672,16 +689,13 @@ transform: translate(-50%, -50%) scale(0.9);
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-portfolio:hover .anim-portfolio::before  {
-    transform: translateY(0);
-    opacity: 1;
-    
+    transform: translateY(0);   
 }
 
 .portfolio-info {
@@ -738,6 +752,7 @@ transform: translate(-50%, -50%) scale(0.9);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -765,6 +780,7 @@ transform: translate(-50%, -50%) scale(0.9);
     display: inline-block;
     margin-bottom: 9px;
     margin-top: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .address-footer:hover,
@@ -780,7 +796,8 @@ transform: translate(-50%, -50%) scale(0.9);
         line-height: 1.7;
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
-        margin-bottom: 9px;                  
+        margin-bottom: 9px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:focus,
@@ -811,6 +828,7 @@ transform: translate(-50%, -50%) scale(0.9);
     align-items: center;
     fill: var(--hero-color); 
     background: rgba(255, 255, 255, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-team-link:last-child {
