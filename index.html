@@ -23,7 +23,7 @@
         <ul class="social-link">
             <li class="item">
                 <a href="mailto:info@devstudio.com" class="link">
-                  <svg class="contact-icon" width="16" height="12">
+                  <svg class="contact-icon"  width="16" height="12">
                       <use href="./img/icons.svg#icon-envelope"></use>
                   </svg>info@devstudio.com
                 </a>
@@ -41,7 +41,7 @@
     <main>
         <section class="background"> 
             <div class="container main-hiro">
-                <h1 class="hero ">Ефективні рішення для вашого бізнесу</h1>
+                <h1 class="hero ">Ефективні рішення для <br>вашого бізнесу</h1>
 
                  <button type="button" class="button-primary" data-modal-open>Замовити послугу</button>
                <div class="backdrop is-hidden" data-modal>
@@ -262,7 +262,7 @@
                <ul class="brand-list">
 
                 <li class="all-brands">
-                    <a class="drand-link" href="">
+                    <a class="brand-link" href="">
                    <svg class="brands">
                     <use href="./img/icons.svg#icon-Client-1"></use>
                    </svg>
@@ -270,36 +270,36 @@
                 </li>
 
                 <li class="all-brands">
-                    <a class="drand-link" href="">
+                    <a class="brand-link" href="">
                     <svg class="brands">
-                        <use href="./img/icons.svg#icon-Client-2"></use>
+                        <use class="f"href="./img/icons.svg#icon-Client-2"></use>
                     </svg>
                     </a>
                 </li>
                 
                 <li class="all-brands">
-                    <a class="drand-link" href="">
+                    <a class="brand-link" href="">
                     <svg class="brands">
                         <use href="./img/icons.svg#icon-Client-3"></use>
                     </svg>
                     </a>
                 </li>
                 <li class="all-brands">
-                    <a class="drand-link" href="">
+                    <a class="brand-link" href="">
                     <svg class="brands">
                         <use href="./img/icons.svg#icon-Client-4"></use>
                     </svg>
                     </a>
                 </li>
                 <li class="all-brands">
-                    <a class="drand-link" href="">
+                    <a class="brand-link" href="">
                     <svg class="brands">
                         <use href="./img/icons.svg#icon-Client-5"></use>
                     </svg>
                     </a>
                 </li>
                 <li class="all-brands">
-                    <a class="drand-link" href="">
+                    <a class="brand-link" href="">
                     <svg class="brands">
                         <use href="./img/icons.svg#icon-Client-6"></use>
                     </svg>
@@ -366,6 +366,11 @@
           </div>
         </div>
     </footer>
+    <script>const { height: pegaHeaderHeight } = document
+    .querySelector(".page-header")
+    .getBoundingClientRect();
+    document.body.style.paddingTop = ${pegaHeaderHeight}px ;
+    </script>
     <script src="./js/modal.js"></script>
     </body>
     </html>
