@@ -570,6 +570,10 @@ textarea {
 
 
 
+
+
+
+
 /*------- about us ------------*/
 
 .services { 
@@ -590,28 +594,11 @@ textarea {
     position: relative;
 }
 
+
 .services__img:last-child {
     margin-right: 0;
 }
 
-
-.services__info {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
-    padding: 27px;
-    background: rgba(47, 48, 58, 0.8); 
-}
-
-.services__info a {
-    text-decoration: none;
-}
-
-.services__info:hover,
-.services__info:focus {
-    background: rgba(47, 48, 58, 0.8);
-}
 
 .services__text {
     display: block;
@@ -622,8 +609,17 @@ textarea {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: pointer;
+
+    width: 100%;
+    margin: 0;
+    position: absolute;
+     bottom: 0px;
+    padding: 27px;
+    background: rgba(47, 48, 58, 0.8);
 
 }
+
 
 
 /* ------section our team----------- */
